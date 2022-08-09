@@ -16,6 +16,11 @@ import enterpriseOverDischargeWarningReport from '../components/DataManagement/e
 //数据大屏
 import LargeDataScreen from '../components/LargeDataScreen/index'
 
+
+
+
+//数据大屏
+import SourceDataRangeStatistics from '../components/DataTrustworthinessSupervision/SourceDataRangeStatistics'
 Vue.use(Router);
 
 export default new Router({
@@ -34,6 +39,28 @@ export default new Router({
                     component: Index,
                     meta: {title: '系统首页'}
                 },
+
+                {
+                    path: '/SourceDataRangeStatistics',
+                    component: SourceDataRangeStatistics,
+                    meta: {title: '源数据范围统计'}
+                },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 {
                     path: '/carbonEmissionAnalysis',
                     component: carbonEmissionAnalysis,

@@ -668,11 +668,7 @@
                     var geoCoordMap = {
                         '下河乡': [118.278110, 37.822820],
                         '郭集': [118.035729, 37.398876],
-                        '辛店镇': [117.589722, 37.363453],
-                        '魏桥镇': [117.498970, 37.028880]
-                        , '马山子镇': [117.876911, 38.026408] ,
-                        '商店镇': [117.689804, 37.558530],
-                        '湖滨镇': [118.199060, 37.097540]
+                        '北海经济开发区': [117.861672, 38.011070],
                     };
                     var data = [
                         {
@@ -684,7 +680,7 @@
                             value: [50, '分布式光伏开发试点镇：<br/>项目承建企业24家<br/>发电服务站目前数量24个站点']
                         },
                         {
-                            name: '辛店镇',
+                            name: '北海经济开发区',
                             value: [50, '分布式光伏开发试点镇：<br/>项目承建企业24家<br/>发电服务站目前数量24个站点']
                         },
                         {
@@ -735,10 +731,11 @@
                             show: true,
                             map: '山东',
                             mapType: '山东',
+                            cp:[116.405285,39.904989],
                             label: {
                                 normal: {
                                     show: true,
-                                    textStyle: {color: "#4bf316"}
+                                    textStyle: {color: "#fff"}
                                 },
                                 emphasis: {
                                     show: true,
@@ -783,6 +780,7 @@
                                 type: 'scatter',
                                 coordinateSystem: 'geo',
                                 symbol: 'pin',
+
                                 symbolSize: function (val) {
                                     var a = (maxSize4Pin - minSize4Pin) / (max - min);
                                     var b = minSize4Pin - a * min;
@@ -793,9 +791,13 @@
                                     normal: {
                                         formatter: '{b}',
                                         show: true,
+                                        left:20,
                                         textStyle: {
-                                            color: '#fff',
-                                            fontSize: 10,
+                                            color: '#4bf316',
+                                            fontSize: 16,
+                                            left: 10,
+
+
                                         }
                                     }
                                 },
@@ -825,7 +827,7 @@
                                     normal: {
                                         color: '#05C3F9',
                                         shadowBlur: 10,
-                                        shadowColor: '#05C3F9'
+                                        shadowColor: '#05C3F9',
                                     }
                                 },
                                 zlevel: 1
@@ -912,6 +914,7 @@
         font-size: 2.5em;
         line-height: 80px;
         color: #fff;
+
     }
 
     #chart_map {

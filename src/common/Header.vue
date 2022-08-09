@@ -2,10 +2,10 @@
     <div class="header">
         <!-- 折叠按钮 -->
         <div class="collapse-btn" @click="collapseChage">
-            <i class="el-icon-menu"></i>
+            <img src="../assets/img/logo.png" alt="" style="margin-top: 8px">
         </div>
         <div class="logo">
-            <span>碳达峰碳中和统一指挥平台</span>
+            <span>绿电资产全过程聚合管理系统</span>
         </div>
         <div class="header-right">
             <div class="header-user-con">
@@ -480,7 +480,7 @@
         height: 70px;
         font-size: 22px;
         color: #fff;
-        background-color: rgba(56, 65, 87, 1);
+        background-color:#088B86;
 
         .collapse-btn {
             float: left;
